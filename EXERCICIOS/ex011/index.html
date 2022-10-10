@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">        
+        <img src="imagens/foto-g.png" alt="foto flexível">
+    </picture>
+
+    <h1> Reproduzindo Áudio</h1>
+    <h2>Existe 2 jeitos de add audio no site:</h2>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <p>1° modo e o também o mais fácil:</p>
+    <audio src="midia/Ceremonial Library - Asher Fulero.mp3" controls autoplay></audio>
+    <p>Reproduzindo o 2 modo de adicionar  áudio<p>
+    <audio>
+        <source src="midia/Ceremonial Library - Asher Fulero.mp3" type="audio/mpeg">
+    </audio> 
+    <audio preload="metadata" controls  autoplay loop> <!--LOOP vai reproduzir sem parar-->
+        <source src="midia/Swimming Lessons - Bail Bonds.mp3" type="audio/mpeg">
+        <source src="midia/Swimming Lessons - Bail Bonds.ogg" type="audio/ogg">
+        <source src="midia/Swimming Lessons - Bail Bonds.wav" type="audio/wav">
+        <!--se o navegador nao conseguir reproduzir nenhum dos 3 formatos de áudio.-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.
+            <a href="midia/Swimming Lessons - Bail Bonds.mp3">Clique aqui para baixar o arquivo MP3</a>
+        </p>
+        
+
+    </audio>
+
+    
+</body>
+</html>
