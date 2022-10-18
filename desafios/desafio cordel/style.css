@@ -5,22 +5,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 
-body{
-    margin: auto;
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
-
-main{
-    min-width: 300px;
-    max-width: 1000px;
+body,html{   
+    min-height: 100vh;
 }
 
 section{  /*geral*/    
     font-family: 'Sriracha';
-    font-size: 44px;
+    font-size: 3.5vw;
     line-height: 2em;
-    padding: 30px;
-    max-width: auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
 }
 
 
@@ -28,25 +28,26 @@ header{
     background-color: black;
     color: white;
     text-align: center;
-    height: 250px;
-}
-
-header>h1{    
-    font-family:  'Passion One' ;
-    font-size: 100px;
-    font-weight: bold;
-    height: 50px;
-    margin: 0px; 
-    padding-top: 50px;
     
 }
-div{
-    margin-top: 60px;
+
+header>h1{        
+    font-family:  'Passion One' ;
+    font-size: 10vw;    
+    font-weight: bold;    
+    padding-top: 50px;
+    font-variant: small-caps; /*letras maiusculas, porem a 1ª letra fica maior que a demais*/
+ 
 }
 
-div>a{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
-    font-size: 16px;
+header>p{
+    padding-bottom: 50px;
+   
+}
+
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    font-weight: bolder;
     color: white;    
     text-decoration:none ;
 }
@@ -54,9 +55,7 @@ a:hover{
     text-decoration: underline;
 }
 
-.imgs{
-    min-width: 300px; 
-    width: 1200px;
+.imgs{    
     background-attachment: fixed;
     background-position: right center;
     background-size: cover; 
@@ -64,14 +63,13 @@ a:hover{
 }
 
 section.imgs>p{
-    background-color: rgba(0, 0, 0, 0.404); 
-    min-width: 300px; 
-    width: 1200px;
-    width: 520px;
+    background-color: rgba(0, 0, 0, 0.288); 
+    max-width: 42vw;  
 }
 
 #img01{
-    background-image: url(imagens/flor.jpg);
+    background-image: url(imagens/flor.jpg);  
+    
 }
 
 
@@ -81,24 +79,12 @@ section.imgs>p{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 footer{    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     background-color: black;
     color: white;
-    height: 30px;
+    padding: 5px;
    
     
 }
