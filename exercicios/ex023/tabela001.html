@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse; /* tira o espaço entre as caixas */
+            width: 400px;
+            height: 400px;
+            
+        } 
+        tr.linha{
+            background-color: rgba(34, 41, 39, 0.418);
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        td.dado{
+            background-color: rgba(142, 165, 42, 0.281);
+            vertical-align: bottom;
+
+        }
+        td.vasio{
+            background-color: rgba(196, 11, 11, 0.192);
+            text-align: right; /*alinhamento HORIZONTAL*/
+            vertical-align: bottom; /*alinhamento VERTICAL*/
+        }
+
+    </style>
+</head>
+<body> 
+    <h1>Minha Primeira Tabela</h1>
+    <table>
+        <tr> <!-- Primeira linha-->
+            <td>A1</td> <!--celula no excell-->
+            <td>B1</td> <!--celula no excell-->
+            <td>C1</td> <!--celula no excell-->
+        </tr>
+        <tr class="linha"> <!-- Segunda Linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!--Terceira Linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="dado">C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td class="vasio">X</td>
+            <td>C4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td class="vasio">X</td>
+            <td class="vasio">X</td>
+        </tr>
+        <tr>
+            <td class="vasio">X</td>
+            <td>B6</td>
+            <td class="vasio">X</td>
+        </tr>
+        <tr>
+            <td class="vasio">X</td>
+            <td class="vasio">X</td>
+            <td>C7</td>
+        </tr>
+    </table>
+</body>
+
+</html>
