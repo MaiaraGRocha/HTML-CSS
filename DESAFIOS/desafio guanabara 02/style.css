@@ -109,7 +109,7 @@ article#extra{
 
 #extra>aside{
     background-color: #1a5c38a2;
-    border-radius: 5px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 #caixaVideo{
@@ -118,6 +118,7 @@ article#extra{
     padding: 20px;
     padding-bottom: 50%;
     background-color: #1A5C38;
+    margin: auto;
 }
 p>iframe{    
     position: absolute;
