@@ -1,1 +1,26 @@
 @charset "UTF-8";
+
+/*TELAS GRANDES*/
+
+/*menor que 768px (telas pqnas tipo celular), vai aparecer a configuração do hamburguer
+se quiser que tabletes tn apareça o menu hamburguer so colocar o @media screen min-width: 992px ( tamanho da tela) */
+
+
+@media screen and (min-width: 768px) {
+    #burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+
+    a{
+        display: inline-block;  /* Vai deixar um do lado do outro */
+    }
+  
+
+
+    main{
+        width: 768px;  /*Quando a tela for muito grande, o main vai ter uma largura fixa : */
+    }
+}
