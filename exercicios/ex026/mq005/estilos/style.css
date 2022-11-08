@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+
+/*VERSÃO MOBILE FIRST*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    background-color: #D3D3D3;
+}
+
+header{
+    background-color: #949494;    
+    
+}
+h1{
+    text-align: center;
+  
+}
+h2{
+  padding-bottom: 20px;
+}
+
+#burguer{
+    display: block;/* fez cobrir toda a linha do menu, nao precisa usar whidth*/
+    background-color: #555555;
+    text-align: center;
+    cursor: pointer;
+
+}
+#burguer:hover{
+    background-color: white;
+    text-align: center;
+}
+menu{
+    display: none;
+}
+
+main{
+    width: 90vw; 
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;  
+    margin: auto;
+    margin-top: 30px;
+}
+
+a{
+    display: block;
+    padding: 10px;
+    background-color: #555555;
+    color: white;         
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid gray;
+    
+}
+
+a:hover{
+    background-color: #808080;
+}
+
+article>p{
+    text-align: justify; 
+    text-indent: 20px; /* Espaço no inicio de cada paragrafo*/
+    margin-bottom: 20px; /* espaço entre os paragrafos (em baixo)*/
+}
+
+/*  add o icone menu: google fonts
+
+ 1 meneira:
+        Variable icon font:
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+        Inserting the icon
+    <i class="material-icons">menu</i> 
+
+ 2 maneira:
+        Variable icon font:
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        Inserting the icon:
+    <span class="material-symbols-outlined">menu</span>
+*/
